@@ -37,7 +37,7 @@ $(function() {
          it('have URLs', function() {
              allFeeds.forEach(function(feed) {
                expect(feed.url).toBeDefined();
-               expect(feed.url).not.toEqual('');
+               expect(feed.url).toMatch(/^(https|http):\/\//);
              });
          });
 
