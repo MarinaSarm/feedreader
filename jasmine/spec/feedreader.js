@@ -110,7 +110,6 @@ $(function() {
          });
 
          it('contain at least one element', (done) => {
-            var feed = document.querySelector('.feed');
             var entry = document.getElementsByClassName('entry');
             var entries = entry.length;
             expect(entries).toBeGreaterThan(0);
